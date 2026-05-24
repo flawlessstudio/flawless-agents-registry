@@ -2,8 +2,9 @@
 
 > **Flawless Agents Registry** — Source of truth for all AI agent stack candidates across 12 layers.
 
-[![Status](https://img.shields.io/badge/status-active-brightgreen)](https://github.com/flawlessstudio/flawless-agents-registry)
+[![Validate Registry](https://github.com/flawlessstudio/flawless-agents-registry/actions/workflows/validate-registry.yml/badge.svg)](https://github.com/flawlessstudio/flawless-agents-registry/actions/workflows/validate-registry.yml)
 [![Version](https://img.shields.io/badge/version-1.0.0-blue)](https://github.com/flawlessstudio/flawless-agents-registry/releases/tag/v1.0.0)
+[![License](https://img.shields.io/badge/license-MIT-lightgrey)](./LICENSE)
 [![Layers](https://img.shields.io/badge/layers-12-orange)](./registry/layers/)
 [![Core](https://img.shields.io/badge/core-140-green)](./registry/registry.core.json)
 [![Watchlist](https://img.shields.io/badge/watchlist-60-purple)](./registry/registry.watchlist.json)
@@ -18,6 +19,8 @@ This registry defines the **canonical, audited, versioned** list of AI agent inf
 |------|---------|
 | `APEX` | Stable market — closed core, production-ready, quarterly-reviewed |
 | `HYBRID` | Active frontier — audited core + live watchlist, updated via PR |
+
+Layer names are authoritative. The canonical source is [`taxonomy.md`](./taxonomy.md).
 
 ---
 
@@ -47,8 +50,8 @@ This registry defines the **canonical, audited, versioned** list of AI agent inf
 
 ```
 registry/
-  registry.core.json          # Layer index → refs to each layer's core.json
-  registry.watchlist.json     # Layer index → refs to each HYBRID layer's watchlist.json
+  registry.core.json          # Layer index → refs to each layer’s core.json
+  registry.watchlist.json     # Layer index → refs to each HYBRID layer’s watchlist.json
   stack_recipes.global.json   # Cross-layer end-to-end stack recipes
   layers/
     L1.telephony/
@@ -60,9 +63,16 @@ registry/
       stack_recipes.json
 schemas/
   candidate.schema.json       # Schema for each candidate entry
-  layer.schema.json           # Schema for layer-level files
+  layer.schema.json           # Schema for layer-level core files
+  watchlist.schema.json       # Schema for layer-level watchlist files
   registry.schema.json        # Schema for root index files
   stack_recipes.schema.json   # Schema for stack recipe files
+scripts/
+  validate-syntax.mjs         # JSON syntax check (all registry + schema files)
+  validate-schema.mjs         # AJV schema validation
+  validate-recipes.mjs        # Stack recipe validation
+  promote.mjs                 # Watchlist → core promotion helper
+  stats.mjs                   # Candidate count by layer
 ```
 
 ---
@@ -93,10 +103,25 @@ Every core candidate must pass:
 
 ```bash
 npm install
-npm run validate       # full: syntax + schema + recipes
-npm run validate:schema  # only schema validation
-npm run stats          # count all candidates by layer
+npm run validate          # full: syntax + schema + recipes
+npm run validate:syntax   # JSON syntax check only
+npm run validate:schema   # AJV schema validation only
+npm run validate:recipes  # stack recipe validation only
+npm run stats             # count all candidates by layer
 ```
+
+---
+
+## Promoting a Candidate
+
+To promote a monitoring candidate to core:
+
+```bash
+node scripts/promote.mjs L3 mistral-large
+# then: npm run validate && git add -p && git commit
+```
+
+See [`CONTRIBUTING.md`](./CONTRIBUTING.md) for the full promotion process.
 
 ---
 
@@ -107,4 +132,15 @@ Per-layer recipes are in each `registry/layers/{layer}/stack_recipes.json`.
 
 ---
 
-*Part of the [Flawless ecosystem](https://github.com/flawlessstudio). Bilingual: [README.es.md](./README.es.md)*
+## Resources
+
+- [`taxonomy.md`](./taxonomy.md) — canonical layer naming authority
+- [`CONTRIBUTING.md`](./CONTRIBUTING.md) — how to add candidates, verticals, and recipes
+- [`ROADMAP.md`](./ROADMAP.md) — planned evolution and versioning targets
+- [`CHANGELOG.md`](./CHANGELOG.md) — full history of changes
+- [`SECURITY.md`](./SECURITY.md) — vulnerability reporting policy
+- [`README.es.md`](./README.es.md) — Spanish documentation
+
+---
+
+*Part of the [Flawless ecosystem](https://github.com/flawlessstudio).*

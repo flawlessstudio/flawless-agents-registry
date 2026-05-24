@@ -1,0 +1,7 @@
+{
+  "layer": "L9",
+  "stack_recipes": [
+    { "id": "l9-llm-safety", "name": "LLM safety stack", "stack": ["lakera-guard", "nemo-guardrails", "llm-guard"], "use_case": "Prompt injection + output filtering" },
+    { "id": "l9-secrets-oss", "name": "OSS secrets management", "stack": ["infisical", "hashicorp-vault"], "use_case": "Self-hosted secrets for AI infra" }
+  ]
+}

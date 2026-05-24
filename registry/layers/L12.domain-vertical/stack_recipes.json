@@ -1,0 +1,8 @@
+{
+  "layer": "L12",
+  "stack_recipes": [
+    { "id": "l12-healthcare-voice", "name": "Healthcare voice agent", "stack": ["nuance-healthcare", "suki-ai"], "use_case": "Clinical documentation voice AI" },
+    { "id": "l12-legal-research", "name": "Legal research stack", "stack": ["harvey-ai", "clio"], "use_case": "Legal AI research + case management" },
+    { "id": "l12-fintech-banking", "name": "Fintech banking AI", "stack": ["kasisto-kai", "blend-fintech"], "use_case": "Banking AI assistant" }
+  ]
+}

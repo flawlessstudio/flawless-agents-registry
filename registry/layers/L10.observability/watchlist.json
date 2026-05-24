@@ -1,0 +1,18 @@
+{
+  "layer": "L10",
+  "name": "Observability",
+  "tier": "HYBRID",
+  "status": "monitoring",
+  "last_updated": "2026-05-24",
+  "note": "LLM eval space is the most active in the ecosystem. New tools appear monthly.",
+  "candidates": [
+    { "id": "deepeval", "name": "DeepEval", "status": "monitoring", "category": "LLM Evals (OSS)", "source": "https://github.com/confident-ai/deepeval", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "confident-ai", "name": "Confident AI", "status": "monitoring", "category": "LLM Evals Platform", "source": "https://www.confident-ai.com", "pricing": "freemium", "deployment": "cloud", "api": true },
+    { "id": "gentrace", "name": "Gentrace", "status": "monitoring", "category": "LLM Pipeline Testing", "source": "https://gentrace.ai", "pricing": "freemium", "deployment": "cloud", "api": true },
+    { "id": "ragas", "name": "Ragas", "status": "monitoring", "category": "RAG Evaluation (OSS)", "source": "https://github.com/explodinggradients/ragas", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "athina-ai", "name": "Athina AI", "status": "monitoring", "category": "LLM Monitoring + Evals", "source": "https://athina.ai", "pricing": "freemium", "deployment": "cloud", "api": true },
+    { "id": "uptrain", "name": "UpTrain", "status": "monitoring", "category": "LLM Evals (OSS)", "source": "https://github.com/uptrain-ai/uptrain", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "evidently-ai", "name": "Evidently AI", "status": "monitoring", "category": "ML + LLM Monitoring", "source": "https://www.evidentlyai.com", "pricing": "freemium", "deployment": "hybrid", "api": true },
+    { "id": "promptfoo", "name": "Promptfoo", "status": "monitoring", "category": "Prompt Testing (OSS)", "source": "https://www.promptfoo.dev", "pricing": "oss", "deployment": "self-hosted", "api": false }
+  ]
+}

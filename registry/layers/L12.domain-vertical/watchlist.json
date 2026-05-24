@@ -1,0 +1,24 @@
+{
+  "layer": "L12",
+  "name": "Domain Vertical",
+  "tier": "HYBRID",
+  "status": "monitoring",
+  "last_updated": "2026-05-24",
+  "note": "L12 watchlist is maintained per vertical. Add candidates here with their vertical tag before promoting to the vertical sub-registry.",
+  "candidates": [
+    { "id": "tennr-healthcare", "name": "Tennr (Healthcare)", "status": "monitoring", "category": "Healthcare AI", "source": "https://www.tennr.com", "pricing": "enterprise", "deployment": "cloud", "api": false },
+    { "id": "nabla-health", "name": "Nabla (Healthcare)", "status": "monitoring", "category": "Clinical AI", "source": "https://www.nabla.com", "pricing": "enterprise", "deployment": "cloud", "api": false },
+    { "id": "airvet", "name": "Airvet (Veterinary)", "status": "monitoring", "category": "Veterinary AI", "source": "https://www.airvet.com", "pricing": "paid", "deployment": "cloud", "api": false },
+    { "id": "docsumo", "name": "Docsumo (Document AI)", "status": "monitoring", "category": "Document Processing", "source": "https://www.docsumo.com", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "latchel-property", "name": "Latchel (Real Estate)", "status": "monitoring", "category": "Property Management AI", "source": "https://www.latchel.com", "pricing": "paid", "deployment": "cloud", "api": false },
+    { "id": "structurely", "name": "Structurely (Real Estate)", "status": "monitoring", "category": "Real Estate AI", "source": "https://www.structurely.com", "pricing": "paid", "deployment": "cloud", "api": false },
+    { "id": "dialektai-insurance", "name": "DialektAI (Insurance)", "status": "monitoring", "category": "Insurance AI Agent", "source": "https://www.dialekt.ai", "pricing": "enterprise", "deployment": "cloud", "api": false },
+    { "id": "brightflag-legal", "name": "Brightflag (Legal)", "status": "monitoring", "category": "Legal Spend AI", "source": "https://brightflag.com", "pricing": "enterprise", "deployment": "cloud", "api": false },
+    { "id": "cognigy-cx", "name": "Cognigy (Logistics CX)", "status": "monitoring", "category": "Logistics / Supply Chain AI", "source": "https://www.cognigy.com", "pricing": "enterprise", "deployment": "hybrid", "api": true },
+    { "id": "talkdesk-retail", "name": "Talkdesk Retail (Ecommerce)", "status": "monitoring", "category": "Ecommerce AI", "source": "https://www.talkdesk.com/industry/retail/", "pricing": "enterprise", "deployment": "cloud", "api": true },
+    { "id": "tutor-ai-edu", "name": "Khanmigo (Education)", "status": "monitoring", "category": "Education AI Tutor", "source": "https://www.khanacademy.org/khan-labs", "pricing": "freemium", "deployment": "cloud", "api": false },
+    { "id": "duolingo-max", "name": "Duolingo Max (Education)", "status": "monitoring", "category": "Language Learning AI", "source": "https://blog.duolingo.com/duolingo-max/", "pricing": "paid", "deployment": "cloud", "api": false },
+    { "id": "autoagent-auto", "name": "Impel AI (Automotive)", "status": "monitoring", "category": "Automotive AI", "source": "https://impel.io", "pricing": "enterprise", "deployment": "cloud", "api": false },
+    { "id": "apaleo-hospitality", "name": "Apaleo (Hospitality)", "status": "monitoring", "category": "Hotel Tech AI", "source": "https://apaleo.com", "pricing": "paid", "deployment": "cloud", "api": true }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "layer": "L11",
+  "name": "Identity/Fraud",
+  "tier": "APEX",
+  "last_reviewed": "2026-05-24",
+  "candidates": [
+    { "id": "pindrop", "name": "Pindrop", "status": "core", "category": "Voice Authentication + Fraud", "source": "https://www.pindrop.com", "pricing": "enterprise", "deployment": "cloud", "api": true },
+    { "id": "onfido", "name": "Onfido", "status": "core", "category": "Identity Verification", "source": "https://onfido.com", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "ory", "name": "Ory", "status": "core", "category": "Auth + Identity (OSS)", "source": "https://www.ory.sh", "pricing": "freemium", "deployment": "hybrid", "api": true },
+    { "id": "okta", "name": "Okta", "status": "core", "category": "Enterprise IAM", "source": "https://www.okta.com", "pricing": "enterprise", "deployment": "cloud", "api": true },
+    { "id": "persona", "name": "Persona", "status": "core", "category": "Identity Verification", "source": "https://withpersona.com", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "socure", "name": "Socure", "status": "core", "category": "AI Identity + Fraud", "source": "https://www.socure.com", "pricing": "enterprise", "deployment": "cloud", "api": true },
+    { "id": "sift", "name": "Sift", "status": "core", "category": "Fraud Detection", "source": "https://sift.com", "pricing": "enterprise", "deployment": "cloud", "api": true },
+    { "id": "sumsub", "name": "Sumsub", "status": "core", "category": "KYC + Identity", "source": "https://sumsub.com", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "trulioo", "name": "Trulioo", "status": "core", "category": "Global Identity Verification", "source": "https://www.trulioo.com", "pricing": "enterprise", "deployment": "cloud", "api": true },
+    { "id": "sardine", "name": "Sardine", "status": "core", "category": "Fraud + Compliance", "source": "https://www.sardine.ai", "pricing": "enterprise", "deployment": "cloud", "api": true }
+  ]
+}

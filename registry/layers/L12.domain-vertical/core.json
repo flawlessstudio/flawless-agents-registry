@@ -1,0 +1,31 @@
+{
+  "layer": "L12",
+  "name": "Domain Vertical",
+  "tier": "HYBRID",
+  "last_reviewed": "2026-05-24",
+  "note": "L12 is infinitely expansible by vertical. Each vertical is a sub-registry. This core.json lists the initial seeded verticals.",
+  "verticals": [
+    "healthcare",
+    "legal",
+    "fintech",
+    "real-estate",
+    "hospitality",
+    "ecommerce",
+    "education",
+    "insurance",
+    "logistics",
+    "hr-recruiting"
+  ],
+  "candidates": [
+    { "id": "nuance-healthcare", "name": "Nuance DAX (Healthcare)", "status": "core", "category": "Healthcare AI", "source": "https://www.nuance.com/healthcare/ambient-clinical-intelligence.html", "pricing": "enterprise", "deployment": "cloud", "api": true },
+    { "id": "suki-ai", "name": "Suki AI (Healthcare)", "status": "core", "category": "Healthcare AI", "source": "https://www.suki.ai", "pricing": "enterprise", "deployment": "cloud", "api": true },
+    { "id": "harvey-ai", "name": "Harvey AI (Legal)", "status": "core", "category": "Legal AI", "source": "https://www.harvey.ai", "pricing": "enterprise", "deployment": "cloud", "api": false },
+    { "id": "clio", "name": "Clio (Legal)", "status": "core", "category": "Legal Practice Management", "source": "https://www.clio.com", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "kasisto-kai", "name": "Kasisto KAI (Fintech)", "status": "core", "category": "Banking AI", "source": "https://kasisto.com", "pricing": "enterprise", "deployment": "cloud", "api": true },
+    { "id": "blend-fintech", "name": "Blend (Fintech)", "status": "core", "category": "Mortgage / Lending AI", "source": "https://blend.com", "pricing": "enterprise", "deployment": "cloud", "api": true },
+    { "id": "sierra-cx", "name": "Sierra CX", "status": "core", "category": "Ecommerce / Retail AI", "source": "https://sierra.ai", "pricing": "enterprise", "deployment": "cloud", "api": false },
+    { "id": "hireez", "name": "HireEZ (HR)", "status": "core", "category": "HR AI Recruiting", "source": "https://hireez.com", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "leena-ai", "name": "Leena AI (HR)", "status": "core", "category": "HR AI Assistant", "source": "https://leena.ai", "pricing": "enterprise", "deployment": "cloud", "api": true },
+    { "id": "abridge-health", "name": "Abridge (Healthcare)", "status": "core", "category": "Clinical Conversation AI", "source": "https://www.abridge.com", "pricing": "enterprise", "deployment": "cloud", "api": false }
+  ]
+}

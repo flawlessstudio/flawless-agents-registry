@@ -1,0 +1,18 @@
+{
+  "layer": "L10",
+  "name": "Observability",
+  "tier": "HYBRID",
+  "last_reviewed": "2026-05-24",
+  "candidates": [
+    { "id": "langsmith", "name": "LangSmith", "status": "core", "category": "LLM Tracing + Evals", "source": "https://smith.langchain.com", "pricing": "freemium", "deployment": "cloud", "api": true },
+    { "id": "braintrust", "name": "Braintrust", "status": "core", "category": "LLM Evals + Observability", "source": "https://www.braintrust.dev", "pricing": "freemium", "deployment": "cloud", "api": true },
+    { "id": "helicone", "name": "Helicone", "status": "core", "category": "LLM Proxy + Analytics", "source": "https://www.helicone.ai", "pricing": "freemium", "deployment": "hybrid", "api": true },
+    { "id": "arize-phoenix", "name": "Arize Phoenix", "status": "core", "category": "LLM Observability (OSS)", "source": "https://phoenix.arize.com", "pricing": "freemium", "deployment": "hybrid", "api": true },
+    { "id": "traceloop", "name": "Traceloop (OpenLLMetry)", "status": "core", "category": "LLM Tracing (OSS)", "source": "https://www.traceloop.com", "pricing": "freemium", "deployment": "hybrid", "api": true },
+    { "id": "datadog-llm", "name": "Datadog LLM Observability", "status": "core", "category": "Enterprise LLM Monitoring", "source": "https://docs.datadoghq.com/llm_observability/", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "weights-biases", "name": "Weights & Biases", "status": "core", "category": "ML Experiment Tracking", "source": "https://wandb.ai", "pricing": "freemium", "deployment": "hybrid", "api": true },
+    { "id": "mlflow", "name": "MLflow", "status": "core", "category": "ML Lifecycle + Tracing (OSS)", "source": "https://mlflow.org", "pricing": "oss", "deployment": "self-hosted", "api": true },
+    { "id": "humanloop", "name": "Humanloop", "status": "core", "category": "LLM Evals + Prompts", "source": "https://humanloop.com", "pricing": "freemium", "deployment": "cloud", "api": true },
+    { "id": "langtrace", "name": "Langtrace", "status": "core", "category": "OSS LLM Tracing", "source": "https://langtrace.ai", "pricing": "freemium", "deployment": "hybrid", "api": true }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "layer": "L11",
+  "stack_recipes": [
+    { "id": "l11-voice-auth", "name": "Voice agent identity verification", "stack": ["pindrop", "onfido"], "use_case": "Caller authentication in voice AI" },
+    { "id": "l11-oss-iam", "name": "OSS IAM stack", "stack": ["ory", "permit-io"], "use_case": "Self-hosted identity + authorization" }
+  ]
+}

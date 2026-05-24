@@ -1,0 +1,22 @@
+{
+  "layer": "L9",
+  "name": "Security",
+  "tier": "APEX",
+  "last_reviewed": "2026-05-24",
+  "candidates": [
+    { "id": "hashicorp-vault", "name": "HashiCorp Vault", "status": "core", "category": "Secrets Management", "source": "https://www.vaultproject.io", "pricing": "freemium", "deployment": "hybrid", "api": true },
+    { "id": "infisical", "name": "Infisical", "status": "core", "category": "Secrets Management (OSS)", "source": "https://infisical.com", "pricing": "freemium", "deployment": "hybrid", "api": true },
+    { "id": "permit-io", "name": "Permit.io", "status": "core", "category": "Authorization / Policy", "source": "https://www.permit.io", "pricing": "freemium", "deployment": "cloud", "api": true },
+    { "id": "auth0", "name": "Auth0 by Okta", "status": "core", "category": "Auth / IAM", "source": "https://auth0.com", "pricing": "freemium", "deployment": "cloud", "api": true },
+    { "id": "aws-kms", "name": "AWS KMS", "status": "core", "category": "Key Management", "source": "https://aws.amazon.com/kms/", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "doppler", "name": "Doppler", "status": "core", "category": "Secrets Management", "source": "https://www.doppler.com", "pricing": "freemium", "deployment": "cloud", "api": true },
+    { "id": "cloudflare-zero-trust", "name": "Cloudflare Zero Trust", "status": "core", "category": "Network Security", "source": "https://www.cloudflare.com/zero-trust/", "pricing": "freemium", "deployment": "cloud", "api": true },
+    { "id": "lakera-guard", "name": "Lakera Guard", "status": "core", "category": "LLM Safety / Prompt Injection", "source": "https://www.lakera.ai", "pricing": "freemium", "deployment": "cloud", "api": true },
+    { "id": "rebuff", "name": "Rebuff", "status": "core", "category": "Prompt Injection Detection", "source": "https://github.com/protectai/rebuff", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "llm-guard", "name": "LLM Guard", "status": "core", "category": "LLM Safety Toolkit", "source": "https://llm-guard.com", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "nemo-guardrails", "name": "NVIDIA NeMo Guardrails", "status": "core", "category": "LLM Safety", "source": "https://github.com/NVIDIA/NeMo-Guardrails", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "snyk", "name": "Snyk", "status": "core", "category": "Code Security / SCA", "source": "https://snyk.io", "pricing": "freemium", "deployment": "cloud", "api": true },
+    { "id": "prisma-cloud", "name": "Prisma Cloud", "status": "core", "category": "Cloud Security Posture", "source": "https://www.paloaltonetworks.com/prisma/cloud", "pricing": "enterprise", "deployment": "cloud", "api": true },
+    { "id": "opa", "name": "Open Policy Agent", "status": "core", "category": "Policy Engine", "source": "https://www.openpolicyagent.org", "pricing": "oss", "deployment": "self-hosted", "api": true }
+  ]
+}

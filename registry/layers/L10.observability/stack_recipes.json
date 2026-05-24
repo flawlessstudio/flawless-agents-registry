@@ -1,0 +1,7 @@
+{
+  "layer": "L10",
+  "stack_recipes": [
+    { "id": "l10-production-trace", "name": "Production LLM tracing", "stack": ["langsmith", "helicone"], "use_case": "Full trace + cost monitoring" },
+    { "id": "l10-oss-evals", "name": "OSS evaluation stack", "stack": ["deepeval", "arize-phoenix", "ragas"], "use_case": "Self-hosted eval pipeline" }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-05-24T03:00:00Z",
+  "tier": "watchlist",
+  "total_candidates": 60,
+  "note": "Monitoring-status candidates for HYBRID layers only. Updatable via PR without audit gate. Promote to core after 30-day review.",
+  "layers": [
+    { "layer": "L3", "name": "LLM", "ref": "./layers/L3.llm/watchlist.json" },
+    { "layer": "L4", "name": "TTS", "ref": "./layers/L4.tts/watchlist.json" },
+    { "layer": "L5", "name": "Orchestration", "ref": "./layers/L5.orchestration/watchlist.json" },
+    { "layer": "L8", "name": "Memory & Data", "ref": "./layers/L8.memory-data/watchlist.json" },
+    { "layer": "L10", "name": "Observability", "ref": "./layers/L10.observability/watchlist.json" },
+    { "layer": "L12", "name": "Domain Vertical", "ref": "./layers/L12.domain-vertical/watchlist.json" }
+  ]
+}

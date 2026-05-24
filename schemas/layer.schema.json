@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/flawlessstudio/flawless-agents-registry/schemas/layer.schema.json",
+  "title": "Flawless Layer Definition",
+  "type": "object",
+  "required": ["layer", "name", "tier", "description"],
+  "properties": {
+    "layer": { "type": "string" },
+    "name": { "type": "string" },
+    "tier": { "type": "string", "enum": ["APEX","HYBRID"] },
+    "description": { "type": "string" },
+    "market_note": { "type": "string" },
+    "update_frequency": { "type": "string" },
+    "watchlist_active": { "type": "boolean" }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/flawlessstudio/flawless-agents-registry/schemas/registry.schema.json",
+  "title": "Flawless Agents Registry",
+  "description": "Top-level registry schema aggregating all 12 layers.",
+  "type": "object",
+  "required": ["version", "generated_at", "layers"],
+  "properties": {
+    "version": { "type": "string" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "total_core": { "type": "integer" },
+    "total_watchlist": { "type": "integer" },
+    "layers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["layer", "name", "tier", "core"],
+        "properties": {
+          "layer": { "type": "string" },
+          "name": { "type": "string" },
+          "tier": { "type": "string", "enum": ["APEX","HYBRID"] },
+          "core": { "type": "array", "items": { "$ref": "candidate.schema.json" } },
+          "watchlist": { "type": "array", "items": { "$ref": "candidate.schema.json" } },
+          "stack_recipes": { "type": "array", "items": { "type": "object" } }
+        }
+      }
+    }
+  }
+}

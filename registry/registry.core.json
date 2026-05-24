@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-05-24T03:00:00Z",
+  "tier": "core",
+  "total_candidates": 140,
+  "note": "Audited production-ready candidates across all 12 layers. APEX layers are fully closed. HYBRID layers are complemented by watchlist.json.",
+  "layers": [
+    { "layer": "L1", "name": "Telephony", "tier": "APEX", "ref": "./layers/L1.telephony/core.json" },
+    { "layer": "L2", "name": "STT", "tier": "APEX", "ref": "./layers/L2.stt/core.json" },
+    { "layer": "L3", "name": "LLM", "tier": "HYBRID", "ref": "./layers/L3.llm/core.json" },
+    { "layer": "L4", "name": "TTS", "tier": "HYBRID", "ref": "./layers/L4.tts/core.json" },
+    { "layer": "L5", "name": "Orchestration", "tier": "HYBRID", "ref": "./layers/L5.orchestration/core.json" },
+    { "layer": "L6", "name": "Integration", "tier": "APEX", "ref": "./layers/L6.integration/core.json" },
+    { "layer": "L7", "name": "Analytics/QA", "tier": "APEX", "ref": "./layers/L7.analytics-qa/core.json" },
+    { "layer": "L8", "name": "Memory & Data", "tier": "HYBRID", "ref": "./layers/L8.memory-data/core.json" },
+    { "layer": "L9", "name": "Security", "tier": "APEX", "ref": "./layers/L9.security/core.json" },
+    { "layer": "L10", "name": "Observability", "tier": "HYBRID", "ref": "./layers/L10.observability/core.json" },
+    { "layer": "L11", "name": "Identity/Fraud", "tier": "APEX", "ref": "./layers/L11.identity-fraud/core.json" },
+    { "layer": "L12", "name": "Domain Vertical", "tier": "HYBRID", "ref": "./layers/L12.domain-vertical/core.json" }
+  ]
+}

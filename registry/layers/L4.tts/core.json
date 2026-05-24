@@ -1,0 +1,20 @@
+{
+  "layer": "L4",
+  "name": "TTS",
+  "tier": "HYBRID",
+  "last_reviewed": "2026-05-24",
+  "candidates": [
+    { "id": "elevenlabs", "name": "ElevenLabs", "status": "core", "category": "Neural TTS", "source": "https://elevenlabs.io", "pricing": "freemium", "deployment": "cloud", "api": true, "benchmark": "Top MOS score for voice cloning" },
+    { "id": "cartesia", "name": "Cartesia", "status": "core", "category": "Low-latency TTS", "source": "https://cartesia.ai", "pricing": "paid", "deployment": "cloud", "api": true, "benchmark": "<100ms TTFB" },
+    { "id": "playht", "name": "PlayHT", "status": "core", "category": "Neural TTS", "source": "https://play.ht", "pricing": "freemium", "deployment": "cloud", "api": true },
+    { "id": "openai-tts", "name": "OpenAI TTS", "status": "core", "category": "Managed TTS", "source": "https://platform.openai.com/docs/guides/text-to-speech", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "google-tts", "name": "Google Cloud TTS", "status": "core", "category": "Managed TTS", "source": "https://cloud.google.com/text-to-speech", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "azure-tts", "name": "Azure Neural TTS", "status": "core", "category": "Managed TTS", "source": "https://azure.microsoft.com/en-us/products/ai-services/text-to-speech", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "aws-polly", "name": "AWS Polly", "status": "core", "category": "Managed TTS", "source": "https://aws.amazon.com/polly/", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "deepgram-aura", "name": "Deepgram Aura", "status": "core", "category": "Low-latency TTS", "source": "https://deepgram.com/product/text-to-speech", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "rime-ai", "name": "Rime AI", "status": "core", "category": "Expressive TTS", "source": "https://rime.ai", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "lmnt", "name": "LMNT", "status": "core", "category": "Low-latency TTS", "source": "https://lmnt.com", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "murf-ai", "name": "Murf AI", "status": "core", "category": "Studio TTS", "source": "https://murf.ai", "pricing": "freemium", "deployment": "cloud", "api": true },
+    { "id": "wellsaid", "name": "WellSaid Labs", "status": "core", "category": "Enterprise TTS", "source": "https://wellsaidlabs.com", "pricing": "enterprise", "deployment": "cloud", "api": true }
+  ]
+}

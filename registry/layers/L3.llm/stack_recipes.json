@@ -1,0 +1,8 @@
+{
+  "layer": "L3",
+  "stack_recipes": [
+    { "id": "l3-voice-agent-fast", "name": "Low-latency voice agent LLM", "stack": ["groq-llm", "deepseek-v3"], "use_case": "Sub-300ms voice agent response" },
+    { "id": "l3-enterprise-rag", "name": "Enterprise RAG stack", "stack": ["cohere-command-r", "aws-bedrock"], "use_case": "Enterprise document Q&A" },
+    { "id": "l3-oss-private", "name": "OSS private deployment", "stack": ["meta-llama-4", "together-ai"], "use_case": "Privacy-first, no vendor lock-in" }
+  ]
+}

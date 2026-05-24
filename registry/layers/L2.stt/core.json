@@ -1,0 +1,18 @@
+{
+  "layer": "L2",
+  "name": "STT",
+  "tier": "APEX",
+  "last_reviewed": "2026-05-24",
+  "candidates": [
+    { "id": "deepgram-nova", "name": "Deepgram Nova-3", "status": "core", "category": "Streaming STT", "source": "https://deepgram.com", "pricing": "paid", "deployment": "cloud", "api": true, "benchmark": "Best WER for real-time voice agents" },
+    { "id": "openai-whisper-api", "name": "OpenAI Whisper API", "status": "core", "category": "Batch STT", "source": "https://platform.openai.com/docs/guides/speech-to-text", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "whisper-oss", "name": "Whisper OSS", "status": "core", "category": "Self-hosted STT", "source": "https://github.com/openai/whisper", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "google-speech-v2", "name": "Google Speech-to-Text v2", "status": "core", "category": "Streaming STT", "source": "https://cloud.google.com/speech-to-text", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "azure-speech-stt", "name": "Azure Speech STT", "status": "core", "category": "Streaming STT", "source": "https://azure.microsoft.com/en-us/products/ai-services/speech-to-text", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "aws-transcribe", "name": "AWS Transcribe", "status": "core", "category": "Streaming STT", "source": "https://aws.amazon.com/transcribe/", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "gladia", "name": "Gladia", "status": "core", "category": "Streaming STT", "source": "https://www.gladia.io", "pricing": "freemium", "deployment": "cloud", "api": true },
+    { "id": "assembly-ai", "name": "AssemblyAI", "status": "core", "category": "Async + Streaming STT", "source": "https://www.assemblyai.com", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "speechmatics", "name": "Speechmatics", "status": "core", "category": "Enterprise STT", "source": "https://www.speechmatics.com", "pricing": "enterprise", "deployment": "hybrid", "api": true },
+    { "id": "rev-ai", "name": "Rev AI", "status": "core", "category": "Async STT", "source": "https://www.rev.ai", "pricing": "paid", "deployment": "cloud", "api": true }
+  ]
+}

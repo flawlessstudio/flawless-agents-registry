@@ -1,0 +1,23 @@
+{
+  "layer": "L1",
+  "name": "Telephony",
+  "tier": "APEX",
+  "last_reviewed": "2026-05-24",
+  "candidates": [
+    { "id": "twilio-voice", "name": "Twilio Voice", "status": "core", "category": "CPaaS", "source": "https://www.twilio.com/voice", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "vonage-voice", "name": "Vonage Voice API", "status": "core", "category": "CPaaS", "source": "https://www.vonage.com/communications-apis/voice/", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "signalwire", "name": "SignalWire", "status": "core", "category": "CPaaS", "source": "https://signalwire.com", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "bandwidth", "name": "Bandwidth", "status": "core", "category": "Carrier API", "source": "https://www.bandwidth.com", "pricing": "enterprise", "deployment": "cloud", "api": true },
+    { "id": "telnyx", "name": "Telnyx", "status": "core", "category": "CPaaS", "source": "https://telnyx.com", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "livekit-telephony", "name": "LiveKit SIP", "status": "core", "category": "SIP/WebRTC", "source": "https://livekit.io/sip", "pricing": "freemium", "deployment": "cloud", "api": true },
+    { "id": "daily-co", "name": "Daily.co", "status": "core", "category": "WebRTC", "source": "https://www.daily.co", "pricing": "freemium", "deployment": "cloud", "api": true },
+    { "id": "plivo", "name": "Plivo", "status": "core", "category": "CPaaS", "source": "https://www.plivo.com", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "sinch", "name": "Sinch Voice", "status": "core", "category": "CPaaS", "source": "https://www.sinch.com", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "aws-connect", "name": "Amazon Connect", "status": "core", "category": "Contact Center", "source": "https://aws.amazon.com/connect/", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "google-ccai", "name": "Google CCAI", "status": "core", "category": "Contact Center AI", "source": "https://cloud.google.com/solutions/contact-center", "pricing": "enterprise", "deployment": "cloud", "api": true },
+    { "id": "azure-communication", "name": "Azure Communication Services", "status": "core", "category": "CPaaS", "source": "https://azure.microsoft.com/en-us/products/communication-services", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "infobip-voice", "name": "Infobip Voice", "status": "core", "category": "CPaaS", "source": "https://www.infobip.com/voice", "pricing": "enterprise", "deployment": "cloud", "api": true },
+    { "id": "ringcentral", "name": "RingCentral", "status": "core", "category": "UCaaS", "source": "https://www.ringcentral.com", "pricing": "enterprise", "deployment": "cloud", "api": true },
+    { "id": "zoom-phone", "name": "Zoom Phone", "status": "core", "category": "UCaaS", "source": "https://zoom.us/phone", "pricing": "enterprise", "deployment": "cloud", "api": true }
+  ]
+}

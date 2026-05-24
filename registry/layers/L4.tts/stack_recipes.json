@@ -1,0 +1,7 @@
+{
+  "layer": "L4",
+  "stack_recipes": [
+    { "id": "l4-voice-agent-cloud", "name": "Cloud TTS for voice agents", "stack": ["cartesia", "elevenlabs"], "use_case": "Low-latency expressive voice" },
+    { "id": "l4-oss-private", "name": "OSS self-hosted TTS", "stack": ["kokoro-tts", "styletss2"], "use_case": "Privacy-first TTS, no cloud" }
+  ]
+}

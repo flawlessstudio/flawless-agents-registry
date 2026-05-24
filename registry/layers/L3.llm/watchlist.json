@@ -1,0 +1,22 @@
+{
+  "layer": "L3",
+  "name": "LLM",
+  "tier": "HYBRID",
+  "status": "monitoring",
+  "last_updated": "2026-05-24",
+  "note": "Emerging or high-velocity LLMs. Promote to core after 30-day production validation.",
+  "candidates": [
+    { "id": "qwen3-235b", "name": "Qwen3-235B", "status": "monitoring", "category": "OSS LLM", "source": "https://qwenlm.github.io", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "kimi-k2", "name": "Kimi K2", "status": "monitoring", "category": "Frontier LLM", "source": "https://www.moonshot.cn", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "deepseek-r2", "name": "DeepSeek R2", "status": "monitoring", "category": "Reasoning LLM", "source": "https://www.deepseek.com", "pricing": "freemium", "deployment": "hybrid", "api": true },
+    { "id": "phi-4", "name": "Microsoft Phi-4", "status": "monitoring", "category": "Small LLM", "source": "https://azure.microsoft.com/en-us/blog/", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "nvidia-nemotron", "name": "NVIDIA Nemotron", "status": "monitoring", "category": "Enterprise LLM", "source": "https://www.nvidia.com/en-us/ai-data-science/products/nemotron/", "pricing": "enterprise", "deployment": "hybrid", "api": true },
+    { "id": "nous-hermes-3", "name": "Nous Hermes 3", "status": "monitoring", "category": "OSS Fine-tuned LLM", "source": "https://nousresearch.com", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "amazon-nova-pro", "name": "Amazon Nova Pro", "status": "monitoring", "category": "Managed LLM", "source": "https://aws.amazon.com/ai/generative-ai/nova/", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "ai21-jamba", "name": "AI21 Jamba", "status": "monitoring", "category": "Mamba/SSM LLM", "source": "https://www.ai21.com", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "command-r-oss", "name": "Cohere C4AI Command R OSS", "status": "monitoring", "category": "OSS LLM", "source": "https://huggingface.co/CohereForAI", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "falcon-3", "name": "Falcon 3", "status": "monitoring", "category": "OSS LLM", "source": "https://falconllm.tii.ae", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "internlm3", "name": "InternLM3", "status": "monitoring", "category": "OSS LLM", "source": "https://github.com/InternLM/InternLM", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "yi-lightning", "name": "Yi Lightning", "status": "monitoring", "category": "OSS LLM", "source": "https://www.01.ai", "pricing": "freemium", "deployment": "cloud", "api": true }
+  ]
+}

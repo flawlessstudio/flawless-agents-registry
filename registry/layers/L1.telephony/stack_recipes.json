@@ -1,0 +1,7 @@
+{
+  "layer": "L1",
+  "stack_recipes": [
+    { "id": "l1-inbound-voice-twilio", "name": "Inbound voice with Twilio", "stack": ["twilio-voice", "livekit-telephony"], "use_case": "Inbound AI call agent" },
+    { "id": "l1-enterprise-contact", "name": "Enterprise contact center", "stack": ["aws-connect", "google-ccai"], "use_case": "Large-scale enterprise inbound/outbound" }
+  ]
+}

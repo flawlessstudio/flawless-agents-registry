@@ -1,0 +1,23 @@
+{
+  "layer": "L3",
+  "name": "LLM",
+  "tier": "HYBRID",
+  "last_reviewed": "2026-05-24",
+  "candidates": [
+    { "id": "openai-gpt4o", "name": "OpenAI GPT-4o", "status": "core", "category": "Frontier LLM", "source": "https://platform.openai.com", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "anthropic-claude-4", "name": "Anthropic Claude 4", "status": "core", "category": "Frontier LLM", "source": "https://www.anthropic.com", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "google-gemini-2", "name": "Google Gemini 2.0 Pro", "status": "core", "category": "Frontier LLM", "source": "https://deepmind.google/technologies/gemini/", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "meta-llama-4", "name": "Meta Llama 4", "status": "core", "category": "OSS LLM", "source": "https://llama.meta.com", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "mistral-large", "name": "Mistral Large", "status": "core", "category": "European LLM", "source": "https://mistral.ai", "pricing": "paid", "deployment": "hybrid", "api": true },
+    { "id": "deepseek-v3", "name": "DeepSeek V3", "status": "core", "category": "OSS LLM", "source": "https://www.deepseek.com", "pricing": "freemium", "deployment": "hybrid", "api": true },
+    { "id": "cohere-command-r", "name": "Cohere Command R+", "status": "core", "category": "Enterprise RAG LLM", "source": "https://cohere.com", "pricing": "paid", "deployment": "hybrid", "api": true },
+    { "id": "groq-llm", "name": "Groq (LPU inference)", "status": "core", "category": "Inference Accelerator", "source": "https://groq.com", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "together-ai", "name": "Together AI", "status": "core", "category": "OSS Model Hosting", "source": "https://www.together.ai", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "fireworks-ai", "name": "Fireworks AI", "status": "core", "category": "Inference Hosting", "source": "https://fireworks.ai", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "perplexity-api", "name": "Perplexity API", "status": "core", "category": "Search-augmented LLM", "source": "https://docs.perplexity.ai", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "xai-grok", "name": "xAI Grok", "status": "core", "category": "Frontier LLM", "source": "https://x.ai", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "aws-bedrock", "name": "AWS Bedrock", "status": "core", "category": "Managed LLM Platform", "source": "https://aws.amazon.com/bedrock/", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "azure-openai", "name": "Azure OpenAI", "status": "core", "category": "Managed LLM Platform", "source": "https://azure.microsoft.com/en-us/products/ai-services/openai-service", "pricing": "enterprise", "deployment": "cloud", "api": true },
+    { "id": "vertex-ai-gemini", "name": "Vertex AI Gemini", "status": "core", "category": "Managed LLM Platform", "source": "https://cloud.google.com/vertex-ai", "pricing": "paid", "deployment": "cloud", "api": true }
+  ]
+}

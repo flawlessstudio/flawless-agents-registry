@@ -1,0 +1,7 @@
+{
+  "layer": "L2",
+  "stack_recipes": [
+    { "id": "l2-realtime-voice", "name": "Real-time voice agent STT", "stack": ["deepgram-nova"], "use_case": "Low-latency voice AI" },
+    { "id": "l2-oss-self-hosted", "name": "Self-hosted STT", "stack": ["whisper-oss"], "use_case": "Privacy-first, no cloud" }
+  ]
+}

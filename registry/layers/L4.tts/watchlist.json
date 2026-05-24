@@ -1,0 +1,18 @@
+{
+  "layer": "L4",
+  "name": "TTS",
+  "tier": "HYBRID",
+  "status": "monitoring",
+  "last_updated": "2026-05-24",
+  "note": "Emerging OSS and neural TTS models that may displace the market within 6 months.",
+  "candidates": [
+    { "id": "kokoro-tts", "name": "Kokoro TTS", "status": "monitoring", "category": "OSS TTS", "source": "https://github.com/hexgrad/kokoro", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "sesame-csm", "name": "Sesame CSM", "status": "monitoring", "category": "Conversational TTS", "source": "https://github.com/SesameAILabs/csm", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "styletss2", "name": "StyleTTS2", "status": "monitoring", "category": "OSS TTS", "source": "https://github.com/yl4579/StyleTTS2", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "parler-tts", "name": "Parler TTS", "status": "monitoring", "category": "OSS TTS", "source": "https://github.com/huggingface/parler-tts", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "outetts", "name": "OuteTTS", "status": "monitoring", "category": "OSS TTS", "source": "https://github.com/edwko/OuteTTS", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "vits2", "name": "VITS2", "status": "monitoring", "category": "OSS TTS", "source": "https://github.com/daniilrobnikov/vits2", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "chatterbox-tts", "name": "Chatterbox TTS", "status": "monitoring", "category": "OSS TTS", "source": "https://github.com/resemble-ai/chatterbox", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "spark-tts", "name": "Spark TTS", "status": "monitoring", "category": "OSS TTS", "source": "https://github.com/SparkAudio/Spark-TTS", "pricing": "oss", "deployment": "self-hosted", "api": false }
+  ]
+}

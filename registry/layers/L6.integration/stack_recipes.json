@@ -1,0 +1,7 @@
+{
+  "layer": "L6",
+  "stack_recipes": [
+    { "id": "l6-crm-automation", "name": "CRM + automation", "stack": ["hubspot", "n8n"], "use_case": "Agent updates CRM after each call" },
+    { "id": "l6-enterprise-sync", "name": "Enterprise data sync", "stack": ["salesforce", "make", "slack"], "use_case": "Enterprise multi-system sync" }
+  ]
+}

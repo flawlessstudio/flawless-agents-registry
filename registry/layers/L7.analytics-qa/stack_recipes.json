@@ -1,0 +1,7 @@
+{
+  "layer": "L7",
+  "stack_recipes": [
+    { "id": "l7-revenue-intelligence", "name": "Revenue intelligence stack", "stack": ["gong", "salesloft"], "use_case": "Post-call analysis and coaching" },
+    { "id": "l7-cc-qa", "name": "Contact center QA", "stack": ["observe-ai", "callrail"], "use_case": "Automated QA for call centers" }
+  ]
+}

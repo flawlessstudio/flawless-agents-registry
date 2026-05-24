@@ -1,0 +1,26 @@
+{
+  "layer": "L6",
+  "name": "Integration",
+  "tier": "APEX",
+  "last_reviewed": "2026-05-24",
+  "candidates": [
+    { "id": "hubspot", "name": "HubSpot CRM", "status": "core", "category": "CRM", "source": "https://www.hubspot.com", "pricing": "freemium", "deployment": "cloud", "api": true },
+    { "id": "salesforce", "name": "Salesforce", "status": "core", "category": "Enterprise CRM", "source": "https://www.salesforce.com", "pricing": "enterprise", "deployment": "cloud", "api": true },
+    { "id": "zoho-crm", "name": "Zoho CRM", "status": "core", "category": "CRM", "source": "https://www.zoho.com/crm/", "pricing": "freemium", "deployment": "cloud", "api": true },
+    { "id": "pipedrive", "name": "Pipedrive", "status": "core", "category": "CRM", "source": "https://www.pipedrive.com", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "n8n", "name": "n8n", "status": "core", "category": "Automation", "source": "https://n8n.io", "pricing": "freemium", "deployment": "hybrid", "api": true },
+    { "id": "make", "name": "Make (Integromat)", "status": "core", "category": "Automation", "source": "https://www.make.com", "pricing": "freemium", "deployment": "cloud", "api": true },
+    { "id": "zapier", "name": "Zapier", "status": "core", "category": "Automation", "source": "https://zapier.com", "pricing": "freemium", "deployment": "cloud", "api": true },
+    { "id": "slack", "name": "Slack", "status": "core", "category": "Messaging", "source": "https://slack.com", "pricing": "freemium", "deployment": "cloud", "api": true },
+    { "id": "notion-api", "name": "Notion API", "status": "core", "category": "Knowledge Base", "source": "https://developers.notion.com", "pricing": "freemium", "deployment": "cloud", "api": true },
+    { "id": "google-workspace", "name": "Google Workspace", "status": "core", "category": "Productivity Suite", "source": "https://workspace.google.com", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "microsoft-365", "name": "Microsoft 365", "status": "core", "category": "Productivity Suite", "source": "https://www.microsoft.com/en-us/microsoft-365", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "airtable", "name": "Airtable", "status": "core", "category": "Data Platform", "source": "https://airtable.com", "pricing": "freemium", "deployment": "cloud", "api": true },
+    { "id": "postgres", "name": "PostgreSQL", "status": "core", "category": "Relational DB", "source": "https://www.postgresql.org", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "supabase", "name": "Supabase", "status": "core", "category": "BaaS / DB", "source": "https://supabase.com", "pricing": "freemium", "deployment": "hybrid", "api": true },
+    { "id": "stripe", "name": "Stripe", "status": "core", "category": "Payments", "source": "https://stripe.com", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "twilio-messaging", "name": "Twilio Messaging", "status": "core", "category": "Messaging", "source": "https://www.twilio.com/messaging", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "sendgrid", "name": "SendGrid", "status": "core", "category": "Email", "source": "https://sendgrid.com", "pricing": "freemium", "deployment": "cloud", "api": true },
+    { "id": "intercom", "name": "Intercom", "status": "core", "category": "Customer Messaging", "source": "https://www.intercom.com", "pricing": "paid", "deployment": "cloud", "api": true }
+  ]
+}

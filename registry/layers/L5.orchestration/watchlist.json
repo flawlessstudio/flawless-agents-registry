@@ -1,0 +1,19 @@
+{
+  "layer": "L5",
+  "name": "Orchestration",
+  "tier": "HYBRID",
+  "status": "monitoring",
+  "last_updated": "2026-05-24",
+  "candidates": [
+    { "id": "agno", "name": "Agno (Phidata)", "status": "monitoring", "category": "Agent Framework", "source": "https://github.com/agno-agi/agno", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "semantic-kernel", "name": "Semantic Kernel", "status": "monitoring", "category": "Agent Framework", "source": "https://github.com/microsoft/semantic-kernel", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "dspy", "name": "DSPy", "status": "monitoring", "category": "Programmatic LLM Framework", "source": "https://github.com/stanfordnlp/dspy", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "mastra", "name": "Mastra", "status": "monitoring", "category": "Agent Framework TS", "source": "https://mastra.ai", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "bee-agent", "name": "IBM Bee Agent", "status": "monitoring", "category": "Enterprise Agent Framework", "source": "https://github.com/i-am-bee/bee-agent-framework", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "smolagents", "name": "HuggingFace smolagents", "status": "monitoring", "category": "Lightweight Agent Framework", "source": "https://github.com/huggingface/smolagents", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "vercel-ai-sdk", "name": "Vercel AI SDK", "status": "monitoring", "category": "Agent SDK (TS)", "source": "https://sdk.vercel.ai", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "n8n-agentic", "name": "n8n Agentic Workflows", "status": "monitoring", "category": "No-code Agent Orchestration", "source": "https://n8n.io", "pricing": "freemium", "deployment": "hybrid", "api": true },
+    { "id": "llamaindex-workflows", "name": "LlamaIndex Workflows", "status": "monitoring", "category": "RAG Agent Pipeline", "source": "https://www.llamaindex.ai", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "fixie-ai", "name": "Fixie AI", "status": "monitoring", "category": "Voice Agent Platform", "source": "https://fixie.ai", "pricing": "paid", "deployment": "cloud", "api": true }
+  ]
+}

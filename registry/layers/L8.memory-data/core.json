@@ -1,0 +1,20 @@
+{
+  "layer": "L8",
+  "name": "Memory & Data",
+  "tier": "HYBRID",
+  "last_reviewed": "2026-05-24",
+  "candidates": [
+    { "id": "pinecone", "name": "Pinecone", "status": "core", "category": "Vector DB (managed)", "source": "https://www.pinecone.io", "pricing": "freemium", "deployment": "cloud", "api": true },
+    { "id": "qdrant", "name": "Qdrant", "status": "core", "category": "Vector DB (OSS)", "source": "https://qdrant.tech", "pricing": "freemium", "deployment": "hybrid", "api": true },
+    { "id": "weaviate", "name": "Weaviate", "status": "core", "category": "Vector DB (OSS)", "source": "https://weaviate.io", "pricing": "freemium", "deployment": "hybrid", "api": true },
+    { "id": "chroma", "name": "ChromaDB", "status": "core", "category": "Vector DB (OSS, embedded)", "source": "https://www.trychroma.com", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "milvus", "name": "Milvus", "status": "core", "category": "Vector DB (OSS)", "source": "https://milvus.io", "pricing": "oss", "deployment": "self-hosted", "api": true },
+    { "id": "redis-vector", "name": "Redis Vector", "status": "core", "category": "In-memory Vector DB", "source": "https://redis.io", "pricing": "freemium", "deployment": "hybrid", "api": true },
+    { "id": "pgvector", "name": "pgvector", "status": "core", "category": "Postgres Vector Extension", "source": "https://github.com/pgvector/pgvector", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "mem0", "name": "Mem0", "status": "core", "category": "Agent Memory Layer", "source": "https://mem0.ai", "pricing": "freemium", "deployment": "hybrid", "api": true },
+    { "id": "zep", "name": "Zep", "status": "core", "category": "Long-term Memory for Agents", "source": "https://www.getzep.com", "pricing": "freemium", "deployment": "hybrid", "api": true },
+    { "id": "motorhead", "name": "Motorhead", "status": "core", "category": "Agent Memory Server", "source": "https://github.com/getmetal/motorhead", "pricing": "oss", "deployment": "self-hosted", "api": true },
+    { "id": "upstash-vector", "name": "Upstash Vector", "status": "core", "category": "Serverless Vector DB", "source": "https://upstash.com/docs/vector/overall/whatisvector", "pricing": "freemium", "deployment": "cloud", "api": true },
+    { "id": "mongodb-atlas-vector", "name": "MongoDB Atlas Vector", "status": "core", "category": "Managed Vector DB", "source": "https://www.mongodb.com/products/platform/atlas-vector-search", "pricing": "freemium", "deployment": "cloud", "api": true }
+  ]
+}

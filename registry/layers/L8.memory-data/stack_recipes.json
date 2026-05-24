@@ -1,0 +1,8 @@
+{
+  "layer": "L8",
+  "stack_recipes": [
+    { "id": "l8-agent-memory", "name": "Agent persistent memory", "stack": ["mem0", "qdrant"], "use_case": "Long-term agent memory across sessions" },
+    { "id": "l8-oss-rag", "name": "OSS RAG stack", "stack": ["chroma", "pgvector"], "use_case": "Self-hosted retrieval pipeline" },
+    { "id": "l8-managed-scale", "name": "Managed at scale", "stack": ["pinecone", "upstash-vector"], "use_case": "Production scale, managed infra" }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "layer": "L7",
+  "name": "Analytics/QA",
+  "tier": "APEX",
+  "last_reviewed": "2026-05-24",
+  "candidates": [
+    { "id": "gong", "name": "Gong", "status": "core", "category": "Revenue Intelligence", "source": "https://www.gong.io", "pricing": "enterprise", "deployment": "cloud", "api": true },
+    { "id": "chorus", "name": "Chorus by ZoomInfo", "status": "core", "category": "Conversation Intelligence", "source": "https://www.zoominfo.com/products/chorus", "pricing": "enterprise", "deployment": "cloud", "api": true },
+    { "id": "callrail", "name": "CallRail", "status": "core", "category": "Call Analytics", "source": "https://www.callrail.com", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "salesloft", "name": "Salesloft", "status": "core", "category": "Sales Engagement + Analytics", "source": "https://salesloft.com", "pricing": "enterprise", "deployment": "cloud", "api": true },
+    { "id": "outreach", "name": "Outreach", "status": "core", "category": "Sales Engagement + Analytics", "source": "https://www.outreach.io", "pricing": "enterprise", "deployment": "cloud", "api": true },
+    { "id": "jiminny", "name": "Jiminny", "status": "core", "category": "Conversation Intelligence", "source": "https://jiminny.com", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "modular-intelligence", "name": "MeetRecord", "status": "core", "category": "Call Recording + AI Insights", "source": "https://meetrecord.com", "pricing": "freemium", "deployment": "cloud", "api": true },
+    { "id": "invoca", "name": "Invoca", "status": "core", "category": "Call Attribution Analytics", "source": "https://www.invoca.com", "pricing": "enterprise", "deployment": "cloud", "api": true },
+    { "id": "dialpad-ai", "name": "Dialpad AI", "status": "core", "category": "UCaaS + Call Intelligence", "source": "https://www.dialpad.com", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "observe-ai", "name": "Observe.AI", "status": "core", "category": "Contact Center AI QA", "source": "https://www.observe.ai", "pricing": "enterprise", "deployment": "cloud", "api": true },
+    { "id": "playvs-convin", "name": "Convin", "status": "core", "category": "Conversation Intelligence", "source": "https://convin.ai", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "verint", "name": "Verint", "status": "core", "category": "Enterprise WFO + QA", "source": "https://www.verint.com", "pricing": "enterprise", "deployment": "hybrid", "api": true }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "layer": "L8",
+  "name": "Memory & Data",
+  "tier": "HYBRID",
+  "status": "monitoring",
+  "last_updated": "2026-05-24",
+  "note": "Vector DBs in active price/performance war. Monitor for production displacement.",
+  "candidates": [
+    { "id": "turbopuffer", "name": "Turbopuffer", "status": "monitoring", "category": "High-performance Vector DB", "source": "https://turbopuffer.com", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "lancedb", "name": "LanceDB", "status": "monitoring", "category": "Embedded Vector DB", "source": "https://lancedb.com", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "vespa", "name": "Vespa", "status": "monitoring", "category": "Search + Vector DB", "source": "https://vespa.ai", "pricing": "freemium", "deployment": "hybrid", "api": true },
+    { "id": "elasticsearch-vector", "name": "Elasticsearch Vector", "status": "monitoring", "category": "Search + Vector DB", "source": "https://www.elastic.co", "pricing": "freemium", "deployment": "hybrid", "api": true },
+    { "id": "singlestore", "name": "SingleStore", "status": "monitoring", "category": "Unified DB + Vector", "source": "https://www.singlestore.com", "pricing": "freemium", "deployment": "hybrid", "api": true },
+    { "id": "marqo", "name": "Marqo", "status": "monitoring", "category": "Tensor Search DB", "source": "https://www.marqo.ai", "pricing": "freemium", "deployment": "hybrid", "api": true },
+    { "id": "vald", "name": "Vald", "status": "monitoring", "category": "Distributed Vector DB", "source": "https://vald.vdaas.org", "pricing": "oss", "deployment": "self-hosted", "api": true },
+    { "id": "cognee", "name": "Cognee", "status": "monitoring", "category": "Knowledge Graph Memory", "source": "https://www.cognee.ai", "pricing": "oss", "deployment": "self-hosted", "api": false }
+  ]
+}

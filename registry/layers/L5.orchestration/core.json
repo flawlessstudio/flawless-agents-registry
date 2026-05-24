@@ -1,0 +1,20 @@
+{
+  "layer": "L5",
+  "name": "Orchestration",
+  "tier": "HYBRID",
+  "last_reviewed": "2026-05-24",
+  "candidates": [
+    { "id": "vapi", "name": "Vapi", "status": "core", "category": "Voice Agent Platform", "source": "https://vapi.ai", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "retell-ai", "name": "Retell AI", "status": "core", "category": "Voice Agent Platform", "source": "https://www.retellai.com", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "bland-ai", "name": "Bland AI", "status": "core", "category": "Voice Agent Platform", "source": "https://www.bland.ai", "pricing": "paid", "deployment": "cloud", "api": true },
+    { "id": "livekit-agents", "name": "LiveKit Agents", "status": "core", "category": "Real-time Agent Framework", "source": "https://livekit.io/agents", "pricing": "oss", "deployment": "self-hosted", "api": true },
+    { "id": "langgraph", "name": "LangGraph", "status": "core", "category": "Agent Graph Framework", "source": "https://langchain-ai.github.io/langgraph/", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "langchain", "name": "LangChain", "status": "core", "category": "Agent Framework", "source": "https://www.langchain.com", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "crewai", "name": "CrewAI", "status": "core", "category": "Multi-Agent Framework", "source": "https://crewai.com", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "autogen", "name": "Microsoft AutoGen", "status": "core", "category": "Multi-Agent Framework", "source": "https://github.com/microsoft/autogen", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "pipecat", "name": "Pipecat", "status": "core", "category": "Voice Pipeline Framework", "source": "https://www.pipecat.ai", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "openai-swarm", "name": "OpenAI Swarm", "status": "core", "category": "Multi-Agent Framework", "source": "https://github.com/openai/swarm", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "haystack", "name": "Haystack", "status": "core", "category": "RAG + Agent Pipeline", "source": "https://haystack.deepset.ai", "pricing": "oss", "deployment": "self-hosted", "api": false },
+    { "id": "google-adk", "name": "Google Agent Development Kit", "status": "core", "category": "Agent SDK", "source": "https://cloud.google.com/products/agent-development-kit", "pricing": "free", "deployment": "cloud", "api": true }
+  ]
+}

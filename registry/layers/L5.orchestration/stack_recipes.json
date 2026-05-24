@@ -1,0 +1,8 @@
+{
+  "layer": "L5",
+  "stack_recipes": [
+    { "id": "l5-voice-platform", "name": "Managed voice agent", "stack": ["vapi", "retell-ai"], "use_case": "Fastest time-to-voice-agent" },
+    { "id": "l5-oss-pipeline", "name": "OSS voice pipeline", "stack": ["livekit-agents", "pipecat", "langgraph"], "use_case": "Full control, self-hosted" },
+    { "id": "l5-multi-agent", "name": "Multi-agent orchestration", "stack": ["crewai", "autogen", "langchain"], "use_case": "Complex multi-step agent tasks" }
+  ]
+}

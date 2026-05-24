@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/flawlessstudio/flawless-agents-registry/schemas/watchlist.schema.json",
+  "title": "WatchlistFile",
+  "description": "Schema for layer-level watchlist.json files. Valid only for HYBRID layers.",
+  "type": "object",
+  "required": ["layer", "tier", "last_reviewed", "candidates"],
+  "additionalProperties": false,
+  "properties": {
+    "layer": {
+      "type": "string",
+      "description": "Layer identifier, e.g. L3, L4.",
+      "pattern": "^L[0-9]{1,2}$"
+    },
+    "tier": {
+      "type": "string",
+      "const": "HYBRID",
+      "description": "Watchlists only exist for HYBRID layers."
+    },
+    "last_reviewed": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO 8601 date of last watchlist review."
+    },
+    "note": {
+      "type": "string",
+      "description": "Optional editorial note about the watchlist state."
+    },
+    "candidates": {
+      "type": "array",
+      "minItems": 1,
+      "description": "List of monitoring-tier candidates.",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "status", "category", "source", "pricing", "deployment", "api"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "name": { "type": "string", "minLength": 1 },
+          "status": { "type": "string", "const": "monitoring" },
+          "category": { "type": "string", "minLength": 1 },
+          "source": { "type": "string", "format": "uri" },
+          "pricing": {
+            "type": "string",
+            "enum": ["oss", "free", "freemium", "paid", "enterprise"]
+          },
+          "deployment": {
+            "type": "string",
+            "enum": ["cloud", "self-hosted", "hybrid"]
+          },
+          "api": { "type": "boolean" },
+          "benchmark": { "type": "string" },
+          "tags": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "notes": { "type": "string" },
+          "promote_after": {
+            "type": "string",
+            "format": "date",
+            "description": "Earliest date for promotion review to core."
+          }
+        }
+      }
+    }
+  }
+}

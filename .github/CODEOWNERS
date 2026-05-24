@@ -1,0 +1,14 @@
+# Flawless Agents Registry — Code Owners
+# All changes require review from the registry maintainer.
+
+# Global ownership
+*                           @flawlessstudio
+
+# Schema changes require extra scrutiny
+/schemas/                   @flawlessstudio
+
+# CI changes
+/.github/workflows/         @flawlessstudio
+
+# Core registry data
+/registry/                  @flawlessstudio

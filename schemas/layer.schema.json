@@ -2,15 +2,43 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/flawlessstudio/flawless-agents-registry/schemas/layer.schema.json",
   "title": "Flawless Layer Definition",
+  "description": "Schema for a layer-level registry file (core.json or watchlist.json)",
   "type": "object",
-  "required": ["layer", "name", "tier", "description"],
+  "required": ["layer", "name", "tier", "last_reviewed", "candidates"],
+  "additionalProperties": false,
   "properties": {
-    "layer": { "type": "string" },
-    "name": { "type": "string" },
-    "tier": { "type": "string", "enum": ["APEX","HYBRID"] },
-    "description": { "type": "string" },
-    "market_note": { "type": "string" },
-    "update_frequency": { "type": "string" },
-    "watchlist_active": { "type": "boolean" }
+    "layer": {
+      "type": "string",
+      "pattern": "^L([1-9]|1[0-2])$",
+      "description": "Layer identifier, e.g. L1 through L12"
+    },
+    "name": { "type": "string", "minLength": 2 },
+    "tier": { "type": "string", "enum": ["APEX", "HYBRID"] },
+    "status": {
+      "type": "string",
+      "enum": ["core", "monitoring"],
+      "description": "Present only on watchlist.json files"
+    },
+    "last_reviewed": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO 8601 date of last layer-level review (YYYY-MM-DD)"
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO 8601 date of last watchlist update (watchlist.json only)"
+    },
+    "note": { "type": "string" },
+    "verticals": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "L12 only: declared sub-registry verticals"
+    },
+    "candidates": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "candidate.schema.json" }
+    }
   }
 }

@@ -13,7 +13,7 @@ on:
 
 jobs:
   validate:
-    name: JSON Schema Validation
+    name: Registry Validation
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -22,50 +22,39 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'npm'
 
-      - name: Install AJV CLI
-        run: npm install -g ajv-cli ajv-formats
+      - name: Install dependencies
+        run: npm ci
 
-      - name: Validate candidate schema files
+      - name: Validate JSON syntax (all files)
         run: |
-          echo "Validating core registry files..."
-          for layer_dir in registry/layers/*/; do
-            layer=$(basename "$layer_dir")
-            echo "Checking layer: $layer"
-            if [ -f "${layer_dir}core.json" ]; then
-              # Extract candidates array and validate each item
-              echo "  -> core.json found"
-            fi
-            if [ -f "${layer_dir}watchlist.json" ]; then
-              echo "  -> watchlist.json found"
-            fi
-          done
-          echo "Registry structure validation passed"
+          echo "=== JSON Syntax Check ==="
+          FAILED=0
+          while IFS= read -r -d '' f; do
+            python3 -c "import json,sys; json.load(open('$f'))" \\
+              && echo "  OK: $f" \\
+              || { echo "  FAIL: $f"; FAILED=1; }
+          done < <(find registry schemas -name '*.json' -print0)
+          [ $FAILED -eq 0 ] || exit 1
 
-      - name: Validate JSON syntax
+      - name: Validate candidates against schema
+        run: node scripts/validate-schema.mjs
+
+      - name: Validate stack recipes against schema
+        run: node scripts/validate-recipes.mjs
+
+      - name: Validate root index files against schema
         run: |
-          find registry -name '*.json' | while read f; do
-            python3 -c "import json,sys; json.load(open('$f'))" && echo "OK: $f" || (echo "FAIL: $f" && exit 1)
-          done
-          find schemas -name '*.json' | while read f; do
-            python3 -c "import json,sys; json.load(open('$f'))" && echo "OK: $f" || (echo "FAIL: $f" && exit 1)
-          done
+          echo "=== Registry Index Validation ==="
+          npx ajv validate \\
+            -s schemas/registry.schema.json \\
+            -d registry/registry.core.json \\
+            --spec=draft7 --strict=false
+          npx ajv validate \\
+            -s schemas/registry.schema.json \\
+            -d registry/registry.watchlist.json \\
+            --spec=draft7 --strict=false
 
       - name: Count registry entries
-        run: |
-          echo "=== Registry Stats ==="
-          total=0
-          for f in $(find registry -name 'core.json'); do
-            count=$(python3 -c "import json; d=json.load(open('$f')); print(len(d.get('candidates', [])))")
-            layer=$(echo $f | awk -F'/' '{print $3}')
-            echo "$layer: $count core candidates"
-            total=$((total + count))
-          done
-          echo "Total core candidates: $total"
-          watchlist_total=0
-          for f in $(find registry -name 'watchlist.json'); do
-            count=$(python3 -c "import json; d=json.load(open('$f')); print(len(d.get('candidates', [])))")
-            watchlist_total=$((watchlist_total + count))
-          done
-          echo "Total watchlist candidates: $watchlist_total"
-          echo "Grand total: $((total + watchlist_total))"
+        run: node scripts/stats.mjs

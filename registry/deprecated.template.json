@@ -1,0 +1,7 @@
+{
+  "layer": "L{N}",
+  "name": "{LayerName}",
+  "tier": "APEX_OR_HYBRID",
+  "_note": "This file holds candidates that have been formally deprecated from this layer. Use status=deprecated and add a 'notes' field explaining the reason.",
+  "candidates": []
+}

@@ -1,0 +1,28 @@
+{
+  "name": "flawless-agents-registry",
+  "version": "1.0.0",
+  "description": "Canonical, audited registry of AI agent infrastructure candidates across 12 layers",
+  "private": true,
+  "scripts": {
+    "validate": "npm run validate:syntax && npm run validate:schema && npm run validate:recipes",
+    "validate:syntax": "node scripts/validate-syntax.mjs",
+    "validate:schema": "node scripts/validate-schema.mjs",
+    "validate:recipes": "node scripts/validate-recipes.mjs",
+    "stats": "node scripts/stats.mjs",
+    "lint": "npm run validate"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-cli": "^5.0.0",
+    "ajv-formats": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flawlessstudio/flawless-agents-registry"
+  },
+  "license": "MIT"
+}

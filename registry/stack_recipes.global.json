@@ -1,0 +1,61 @@
+{
+  "layer": "GLOBAL",
+  "stack_recipes": [
+    {
+      "id": "global-managed-voice-agent",
+      "name": "Managed Voice Agent (SaaS stack)",
+      "layers": ["L1", "L2", "L3", "L4", "L5", "L6", "L7"],
+      "stack": ["twilio-voice", "deepgram-nova", "openai-gpt4o", "elevenlabs", "vapi", "hubspot", "gong"],
+      "use_case": "Production-ready AI voice agent for sales or support using fully managed, cloud SaaS components."
+    },
+    {
+      "id": "global-oss-voice-agent",
+      "name": "Self-hosted OSS Voice Agent",
+      "layers": ["L1", "L2", "L3", "L4", "L5", "L8"],
+      "stack": ["livekit-telephony", "whisper-oss", "meta-llama-4", "kokoro-tts", "pipecat", "qdrant"],
+      "use_case": "Fully self-hosted, open-source voice agent pipeline for privacy-sensitive or cost-constrained deployments."
+    },
+    {
+      "id": "global-enterprise-secure-agent",
+      "name": "Enterprise Secure Voice Agent",
+      "layers": ["L1", "L2", "L3", "L5", "L9", "L10", "L11"],
+      "stack": ["azure-communication", "azure-speech-stt", "azure-openai", "langgraph", "auth0", "langsmith", "okta"],
+      "use_case": "Enterprise-grade voice agent with full Azure stack, IAM, audit trail, and compliance controls."
+    },
+    {
+      "id": "global-low-latency-voice-agent",
+      "name": "Ultra-low Latency Voice Agent",
+      "layers": ["L1", "L2", "L3", "L4", "L5"],
+      "stack": ["livekit-telephony", "deepgram-nova", "groq-llm", "cartesia", "retell-ai"],
+      "use_case": "Minimum TTFB voice agent optimised for sub-500ms end-to-end response time."
+    },
+    {
+      "id": "global-rag-voice-agent",
+      "name": "RAG-augmented Voice Agent",
+      "layers": ["L2", "L3", "L5", "L8", "L10"],
+      "stack": ["deepgram-nova", "cohere-command-r", "haystack", "pinecone", "langsmith"],
+      "use_case": "Voice agent with retrieval-augmented generation over a private knowledge base."
+    },
+    {
+      "id": "global-healthcare-voice-agent",
+      "name": "Healthcare AI Voice Agent",
+      "layers": ["L1", "L2", "L3", "L4", "L5", "L9", "L11", "L12"],
+      "stack": ["twilio-voice", "deepgram-nova", "anthropic-claude-4", "elevenlabs", "vapi", "nemo-guardrails", "pindrop", "nuance-healthcare"],
+      "use_case": "HIPAA-aligned voice agent for clinical intake, ambient documentation, or patient engagement."
+    },
+    {
+      "id": "global-fintech-voice-agent",
+      "name": "Fintech Compliance Voice Agent",
+      "layers": ["L1", "L2", "L3", "L5", "L9", "L11", "L12"],
+      "stack": ["twilio-voice", "deepgram-nova", "openai-gpt4o", "langgraph", "llm-guard", "sardine", "kasisto-kai"],
+      "use_case": "Voice agent for banking or insurance with fraud detection, identity verification, and LLM safety controls."
+    },
+    {
+      "id": "global-multi-agent-backend",
+      "name": "Multi-Agent Backend (no voice)",
+      "layers": ["L3", "L5", "L6", "L8", "L10"],
+      "stack": ["anthropic-claude-4", "crewai", "n8n", "mem0", "langsmith"],
+      "use_case": "Headless multi-agent orchestration system for complex async tasks and workflow automation."
+    }
+  ]
+}

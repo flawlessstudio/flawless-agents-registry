@@ -5,6 +5,7 @@
   "description": "Schema for a single AI agents registry candidate entry",
   "type": "object",
   "required": ["id", "name", "status", "category", "source", "pricing", "deployment", "api"],
+  "additionalProperties": false,
   "properties": {
     "id": {
       "type": "string",
@@ -17,7 +18,11 @@
       "enum": ["core", "monitoring", "deprecated"]
     },
     "category": { "type": "string", "minLength": 2 },
-    "source": { "type": "string", "format": "uri" },
+    "source": {
+      "type": "string",
+      "format": "uri",
+      "description": "Official URL of the tool or documentation"
+    },
     "pricing": {
       "type": "string",
       "enum": ["oss", "free", "freemium", "paid", "enterprise"]
@@ -26,12 +31,27 @@
       "type": "string",
       "enum": ["cloud", "self-hosted", "hybrid"]
     },
-    "api": { "type": "boolean" },
-    "notes": { "type": "string" },
+    "api": {
+      "type": "boolean",
+      "description": "Whether the tool exposes a documented public API"
+    },
+    "benchmark": {
+      "type": "string",
+      "description": "Optional: benchmark claim or performance note for this candidate"
+    },
     "tags": {
       "type": "array",
-      "items": { "type": "string" }
+      "items": { "type": "string" },
+      "description": "Optional: free-form tags for filtering and discovery"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Optional: human-readable review note, use case fit, or caveat"
+    },
+    "last_reviewed": {
+      "type": "string",
+      "format": "date",
+      "description": "Optional: date this candidate was last individually reviewed (YYYY-MM-DD)"
     }
-  },
-  "additionalProperties": false
+  }
 }

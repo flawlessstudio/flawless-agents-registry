@@ -1,25 +1,37 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://github.com/flawlessstudio/flawless-agents-registry/schemas/candidate.schema.json",
-  "title": "Flawless Registry Candidate",
-  "description": "Schema for a single candidate entry in the Flawless Agents Registry.",
+  "title": "Registry Candidate",
+  "description": "Schema for a single AI agents registry candidate entry",
   "type": "object",
-  "required": ["id", "name", "layer", "tier", "status", "category", "source", "last_reviewed"],
+  "required": ["id", "name", "status", "category", "source", "pricing", "deployment", "api"],
   "properties": {
-    "id": { "type": "string", "description": "Unique slug identifier. e.g. twilio-voice" },
-    "name": { "type": "string" },
-    "layer": { "type": "string", "enum": ["L1","L2","L3","L4","L5","L6","L7","L8","L9","L10","L11","L12"] },
-    "tier": { "type": "string", "enum": ["APEX","HYBRID"] },
-    "status": { "type": "string", "enum": ["core","monitoring","deprecated","rejected"] },
-    "category": { "type": "string", "description": "Functional category within the layer" },
-    "source": { "type": "string", "format": "uri", "description": "Official homepage or docs URL" },
-    "pricing": { "type": "string", "enum": ["free","freemium","paid","enterprise","oss"] },
-    "deployment": { "type": "string", "enum": ["cloud","self-hosted","hybrid","edge"] },
-    "api": { "type": "boolean", "description": "Has public API or SDK" },
-    "benchmark": { "type": "string", "description": "Public benchmark reference or score" },
-    "last_reviewed": { "type": "string", "format": "date" },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*[a-z0-9]$",
+      "description": "Kebab-case unique identifier"
+    },
+    "name": { "type": "string", "minLength": 2 },
+    "status": {
+      "type": "string",
+      "enum": ["core", "monitoring", "deprecated"]
+    },
+    "category": { "type": "string", "minLength": 2 },
+    "source": { "type": "string", "format": "uri" },
+    "pricing": {
+      "type": "string",
+      "enum": ["oss", "free", "freemium", "paid", "enterprise"]
+    },
+    "deployment": {
+      "type": "string",
+      "enum": ["cloud", "self-hosted", "hybrid"]
+    },
+    "api": { "type": "boolean" },
     "notes": { "type": "string" },
-    "tags": { "type": "array", "items": { "type": "string" } },
-    "stack_recipes": { "type": "array", "items": { "type": "string" }, "description": "Compatible stack recipe IDs" }
-  }
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": false
 }

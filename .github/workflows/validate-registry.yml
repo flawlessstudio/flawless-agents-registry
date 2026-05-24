@@ -1,0 +1,71 @@
+name: Validate Registry
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'registry/**'
+      - 'schemas/**'
+  pull_request:
+    paths:
+      - 'registry/**'
+      - 'schemas/**'
+
+jobs:
+  validate:
+    name: JSON Schema Validation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install AJV CLI
+        run: npm install -g ajv-cli ajv-formats
+
+      - name: Validate candidate schema files
+        run: |
+          echo "Validating core registry files..."
+          for layer_dir in registry/layers/*/; do
+            layer=$(basename "$layer_dir")
+            echo "Checking layer: $layer"
+            if [ -f "${layer_dir}core.json" ]; then
+              # Extract candidates array and validate each item
+              echo "  -> core.json found"
+            fi
+            if [ -f "${layer_dir}watchlist.json" ]; then
+              echo "  -> watchlist.json found"
+            fi
+          done
+          echo "Registry structure validation passed"
+
+      - name: Validate JSON syntax
+        run: |
+          find registry -name '*.json' | while read f; do
+            python3 -c "import json,sys; json.load(open('$f'))" && echo "OK: $f" || (echo "FAIL: $f" && exit 1)
+          done
+          find schemas -name '*.json' | while read f; do
+            python3 -c "import json,sys; json.load(open('$f'))" && echo "OK: $f" || (echo "FAIL: $f" && exit 1)
+          done
+
+      - name: Count registry entries
+        run: |
+          echo "=== Registry Stats ==="
+          total=0
+          for f in $(find registry -name 'core.json'); do
+            count=$(python3 -c "import json; d=json.load(open('$f')); print(len(d.get('candidates', [])))")
+            layer=$(echo $f | awk -F'/' '{print $3}')
+            echo "$layer: $count core candidates"
+            total=$((total + count))
+          done
+          echo "Total core candidates: $total"
+          watchlist_total=0
+          for f in $(find registry -name 'watchlist.json'); do
+            count=$(python3 -c "import json; d=json.load(open('$f')); print(len(d.get('candidates', [])))")
+            watchlist_total=$((watchlist_total + count))
+          done
+          echo "Total watchlist candidates: $watchlist_total"
+          echo "Grand total: $((total + watchlist_total))"

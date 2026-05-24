@@ -1,0 +1,31 @@
+{
+  "registry": "flawless-agents-registry",
+  "version": "1.0.0",
+  "last_updated": "2026-05-24",
+  "total_layers": 12,
+  "description": "Comprehensive AI Agents Ecosystem Registry — 12 architectural layers covering the full stack of AI agent infrastructure, platforms, and tools.",
+  "layers": [
+    { "id": "L1", "name": "Foundation Models", "tier": "APEX", "path": "layers/L1.foundation-models/", "status": "active" },
+    { "id": "L2", "name": "Voice & STT", "tier": "APEX", "path": "layers/L2.voice-stt/", "status": "active" },
+    { "id": "L3", "name": "TTS & Voice Synthesis", "tier": "HYBRID", "path": "layers/L3.tts-voice-synthesis/", "status": "active" },
+    { "id": "L4", "name": "Knowledge & RAG", "tier": "HYBRID", "path": "layers/L4.knowledge-rag/", "status": "active" },
+    { "id": "L5", "name": "Orchestration", "tier": "HYBRID", "path": "layers/L5.orchestration/", "status": "active" },
+    { "id": "L6", "name": "Integration", "tier": "APEX", "path": "layers/L6.integration/", "status": "active" },
+    { "id": "L7", "name": "Analytics/QA", "tier": "APEX", "path": "layers/L7.analytics-qa/", "status": "active" },
+    { "id": "L8", "name": "Memory & Data", "tier": "HYBRID", "path": "layers/L8.memory-data/", "status": "active" },
+    { "id": "L9", "name": "Security", "tier": "APEX", "path": "layers/L9.security/", "status": "active" },
+    { "id": "L10", "name": "Observability", "tier": "HYBRID", "path": "layers/L10.observability/", "status": "active" },
+    { "id": "L11", "name": "Identity/Fraud", "tier": "APEX", "path": "layers/L11.identity-fraud/", "status": "active" },
+    { "id": "L12", "name": "Domain Vertical", "tier": "HYBRID", "path": "layers/L12.domain-vertical/", "status": "active" }
+  ],
+  "tier_definitions": {
+    "APEX": "Best-in-class. Recommended for production. Updated quarterly.",
+    "HYBRID": "Mix of OSS and managed options. Context-dependent choice. Updated monthly.",
+    "WATCHLIST": "Emerging or experimental. Monitor for promotion to CORE."
+  },
+  "candidate_statuses": {
+    "core": "Production-validated. In active registry.",
+    "monitoring": "Tracking closely. Not yet production-validated.",
+    "deprecated": "No longer recommended. Kept for reference."
+  }
+}

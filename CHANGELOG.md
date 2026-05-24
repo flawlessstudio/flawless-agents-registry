@@ -8,6 +8,10 @@ Versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+---
+
+## [1.0.1] — 2026-05-24
+
 ### Added
 - `scripts/validate-syntax.mjs` — portable Node.js JSON syntax validator (resolves broken `validate:syntax` script reference)
 - `scripts/promote.mjs` — CLI helper to promote a candidate from watchlist to core
@@ -15,6 +19,10 @@ Versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - `LICENSE` — MIT license file (aligns with `package.json` declaration)
 - `SECURITY.md` — vulnerability reporting policy and response SLA
 - `ROADMAP.md` — versioned evolution plan: v1.x patch cadence, v1.1 tooling, v1.2 ecosystem, v2.0 gates, L12 expansion plan
+
+### Changed
+- `README.md` — added CI badge, license badge, taxonomy link, ROADMAP/SECURITY links, full scripts reference, promoting section
+- `CHANGELOG.md` — added [Unreleased] section and post-v1.0.0 entries
 
 ---
 
